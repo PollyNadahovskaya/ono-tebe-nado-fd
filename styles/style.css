@@ -12,7 +12,7 @@
   gap: 37px;
 }
 
-.header__links-list {
+.menu {
   display: flex;
   align-items: center;
   gap: 13px;
@@ -284,6 +284,9 @@ h3 {
   justify-content: space-between;
   margin-top: 180px;
   padding: 0 50px;
+}
+.contacts {
+  font-style: normal;
 }
 
 .sm-images {
