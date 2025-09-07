@@ -18,14 +18,20 @@
   font-size: 18px;
   font-style: regular;
   line-height: 1em;
-  text-decoration: underline;
-  text-underline-offset: 4px;
   list-style: circle;
 }
 
-.menu-item_first {
-  text-decoration: none;
+.menu-item_active {
   list-style: none;
+}
+
+.link-active {
+  text-decoration: none;
+}
+
+.link-normal {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .contact-link_active {
@@ -51,6 +57,7 @@
   justify-self: end;
   align-items: flex-start;
   min-width: 240px;
+  font-style: normal;
 }
 
 .contacts-adress {
@@ -232,7 +239,7 @@ ul {
 .about {
   display: grid;
   grid-template-columns: 334px auto;
-  padding: 35px 0 0 47px;
+  padding: 35px 24px 0;
 }
 .about-logo {
   display: flex;
@@ -241,6 +248,7 @@ ul {
   align-items: center;
   width: 240px;
   height: 240px;
+  margin-left: 47px;
   border-radius: 50%;
   background: #000;
 }
@@ -251,7 +259,7 @@ ul {
 }
 
 .about-content {
-  margin: 103px 0 0 -22px;
+  margin: 103px 0 0 25px;
 }
 
 .about-aukcion {
@@ -281,12 +289,6 @@ ul {
   justify-content: space-between;
   margin-top: 180px;
   padding: 0 50px 82px;
-}
-
-.footer-contacts {
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
 }
 
 .menu-footer {
