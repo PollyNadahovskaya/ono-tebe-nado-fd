@@ -43,7 +43,6 @@
   width: 148px;
   height: 105px;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .logo-image-header {
@@ -54,10 +53,13 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  font-style: normal;
+}
+
+.contacts-position {
   justify-self: end;
   align-items: flex-start;
   min-width: 240px;
-  font-style: normal;
 }
 
 .contacts-adress {
@@ -65,7 +67,6 @@
   font-size: 18px;
   font-style: regular;
   line-height: 24.3px;
-  cursor: pointer;
 }
 
 .cover {
@@ -155,6 +156,7 @@ h1 {
 
 .lots-title {
   margin: 0 0 29px 65px;
+  padding-top: 8px;
   font-weight: 700;
   font-size: 40px;
   font-style: bold;
@@ -204,7 +206,6 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  cursor: pointer;
 }
 
 .lots-article_title {
@@ -238,17 +239,18 @@ ul {
 
 .about {
   display: grid;
-  grid-template-columns: 334px auto;
-  padding: 35px 24px 0;
+  grid-template-columns: 334px 1fr;
+  margin: 0 26px 0 25px;
+  padding-top: 35px;
 }
 .about-logo {
   display: flex;
   flex-shrink: 0;
+  justify-self: center;
   justify-content: center;
   align-items: center;
   width: 240px;
   height: 240px;
-  margin-left: 47px;
   border-radius: 50%;
   background: #000;
 }
@@ -259,11 +261,11 @@ ul {
 }
 
 .about-content {
-  margin: 103px 0 0 25px;
+  margin: 107px 0 0 25px;
 }
 
 .about-aukcion {
-  margin-bottom: 100px;
+  margin-bottom: 102px;
   font-weight: 700;
   font-size: 40px;
   font-style: bold;
@@ -274,7 +276,7 @@ ul {
 .about-text {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
 }
 
 .about-text_element {
@@ -285,10 +287,14 @@ ul {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 180px;
   padding: 0 50px 82px;
+}
+
+.footer-contacts {
+  max-width: 260px;
 }
 
 .menu-footer {
@@ -304,6 +310,7 @@ ul {
 
 .sm-images {
   display: flex;
+  justify-self: end;
   gap: 48px;
 }
 
